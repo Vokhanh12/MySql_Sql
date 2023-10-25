@@ -127,8 +127,47 @@ email         employee_id frist_name                                         las
 ------------  ----------- -------------------------------------------------- -------------------------------------------------- --------- ----------------
 ```
 
+<h4>Insert Rows</h4>
 
 
+```bash
+employee_id frist_name                                         last_name                                          ourly_pay hire_date        phone_number
+----------- -------------------------------------------------- -------------------------------------------------- --------- ---------------- ------------
+```
 
 
+```sql
+INSERT INTO employees
+VALUES (1, "Eugene", "Krabs", 25.50, "2023-01-02");
+```
+
+
+```bash
+employee_id frist_name                                         last_name                                          ourly_pay hire_date        phone_number
+----------- -------------------------------------------------- -------------------------------------------------- --------- ---------------- ------------
+          1 Eugene                                             Krabs                                                  25.50       2023-01-02 0987654321  
+```
+
+
+```sql
+INSERT INTO employees (employee_id, first_name, last_name, hourly_pay, hire_date, phone_number)
+VALUES 
+(2, 'SpongeBob', 'SquarePants', 20.00, '2023-03-15', '1234567890'),
+(3, 'Patrick', 'Star', 18.50, '2023-03-20', '9876543210'),
+(4, 'Squidward', 'Tentacles', 22.00, '2023-04-01', '5551112233'),
+(5, 'Gary', 'Snail', 15.75, '2023-04-10', '8889990000'),
+(6, 'Sandy', 'Cheeks', 30.00, '2023-05-01', '1112223333');
+```
+
+
+```bash
+employee_id frist_name                                         last_name                                          ourly_pay hire_date        phone_number
+----------- -------------------------------------------------- -------------------------------------------------- --------- ---------------- ------------
+          1 Eugene                                             Krabs                                                  25.50       2023-01-02 0987654321  
+          2 SpongeBob                                          SquarePants                                            20.00       2023-03-15 1234567890  
+          3 Patrick                                            Star                                                   18.50       2023-03-20 9876543210  
+          4 Squidward                                          Tentacles                                              22.00       2023-04-01 5551112233  
+          5 Gary                                               Snail                                                  15.75       2023-04-10 8889990000  
+          6 Sandy                                              Cheeks                                                 30.00       2023-05-01 1112223333 
+```
 
