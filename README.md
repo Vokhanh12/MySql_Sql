@@ -21,9 +21,7 @@ CREATE TABLE [Table Name] (
   ...  
 );
 
-
-Type: Int, Varchar, Decimal, Date...  
-
+Type: Int, Varchar, Decimal, Date...
 
 Example:  
 CREATE TABLE employees (  
