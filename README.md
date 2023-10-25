@@ -82,6 +82,51 @@ employee_id frist_name                                         last_name        
 
 ```
 
+<h4>Change types of column</h4>
+
+
+```sql
+ALTER TABLE [Table name]
+MODIFY COLUMN [Column name] Type(size)
+
+Example:
+ALTER TABLE employees
+MODIFY COLUMN email VARCHAR(100)
+```
+
+<h4>change position in column and Change types of column</h4>
+
+
+```sql
+ALTER TABLE [Table name]
+MODIFY COLUMN [Column name] Type(size)
+ALTER [Column name]
+
+Example:
+ALTER TABLE employees
+MODIFY COLUMN email VARCHAR(20)
+AFTER last_name
+```
+
+
+```bash
+employee_id frist_name                                         last_name                                          email        ourly_pay hire_date        
+----------- -------------------------------------------------- -------------------------------------------------- ------------ --------- ----------------
+```
+
+```sql
+Example:
+ALTER TABLE employees
+MODIFY COLUMN email VARCHAR(20)
+FRIST;
+```
+
+
+```bash
+email         employee_id frist_name                                         last_name                                          ourly_pay hire_date        
+------------  ----------- -------------------------------------------------- -------------------------------------------------- --------- ----------------
+```
+
 
 
 
